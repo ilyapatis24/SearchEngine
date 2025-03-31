@@ -9,7 +9,6 @@
 #include <queue>
 #include <unordered_set>
 #include <vector>
-#include <mutex>
 #include <condition_variable>
 
 struct Task {

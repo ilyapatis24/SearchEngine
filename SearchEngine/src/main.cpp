@@ -10,17 +10,7 @@ int main() {
 
     try {
         Application app("Config.ini");
-
-        #ifdef FULL_PROJECT_MODE
         app.run();
-        #else
-            #ifdef CONSOLE_SEARCH_MODE
-            app.ConsoleSearch();
-            #else
-            app.HTMLSearch();
-            #endif
-        #endif
-
         return 0;
     }
     catch (const std::exception& e) {

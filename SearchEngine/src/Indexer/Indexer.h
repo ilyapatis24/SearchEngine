@@ -1,7 +1,5 @@
 #pragma once
 #include <boost/regex.hpp>
-#include <boost/locale.hpp>
-
 #include "../Utils/Logger.h"
 
 #include <iostream>

@@ -2,8 +2,6 @@
 #include "../Utils/Logger.h"
 #include "../Utils/HTTPUtils.h"
 
-#include <boost/locale.hpp>
-
 #include <iostream>
 #include <locale>
 #include <codecvt>

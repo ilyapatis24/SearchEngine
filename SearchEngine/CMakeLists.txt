@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 project(SearchEngine)
-
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_compile_definitions(_GLIBCXX_USE_CXX11_ABI=0)
@@ -57,6 +57,6 @@ set(OPENSSL_CRYPTO_LIBRARY "${OPENSSL_DIR}/lib/VC/x64/MDd/libcrypto.lib")
 set(OPENSSL_SSL_LIBRARY "${OPENSSL_DIR}/lib/VC/x64/MDd/libssl.lib")
 target_include_directories(SearchEngine PRIVATE ${OPENSSL_INCLUDE_DIR})
 target_include_directories(SearchEngine PRIVATE ${BOOST_INCLUDE_DIR})
-target_link_directories(SearchEngine PRIVATE ${BOOST_INCLUDE_DIR})
+target_link_libraries(SearchEngine PRIVATE ${BOOST_LIBS})
 target_link_libraries(SearchEngine PRIVATE ${OPENSSL_CRYPTO_LIBRARY} ${OPENSSL_SSL_LIBRARY} pqxx)
 

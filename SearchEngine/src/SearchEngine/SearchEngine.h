@@ -1,9 +1,6 @@
 #pragma once
 #include "../Utils/Logger.h"
 #include "../Database/Database.h"
-
-#include <boost/beast/core.hpp>
-#include <boost/beast/http.hpp>
 #include <boost/asio.hpp>
 
 #include <thread>
